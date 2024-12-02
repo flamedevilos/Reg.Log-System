@@ -1,6 +1,6 @@
 **_ Contact, Registration & login -App _**
 
-#Languages: HTML, PHP & MySQL
+* Languages: HTML, PHP & MySQL
 #Styling: CSS
 #Database_MySQL-Workbench: DB\_ 'php.CRL_system'-> CRL: CONTACT REGISTRATION LOGIN
 #Connect Server to the App through php script
