@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  border-radius: 10px;
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+header a {
+  text-decoration: none;
+  cursor: pointer;
+  color: grey;
+}
+
+.regLog {
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.regLog:hover {
+  color: #0000ff;
+}
+
+/*---- navigation bar ----*/
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  align-items: center;
+  font-weight: bold;
+}
+
+.filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: right;
+}
+.filter input {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid #808080;
+  border-radius: 10px;
+}
+.filter .search-btn {
+  border: none;
+  background-color: transparent;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.search-btn img {
+  border: 1px solid #808080;
+  border-radius: 20px;
+  width: 30px;
+  height: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.search-btn img:hover {
+  width: 34px;
+  height: 34px;
+}
+
+/*----- Home page -----*/
+.homeMain {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.homeMain h1 {
+  text-align: center;
+}
+
+.homeMain p {
+  text-align: center;
+}
+
+/*----- Footer -----*/
+footer {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+footer a img {
+  background-color: transparent;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+}
+
+/*----- Contact page -----*/
+.contactMain::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 6px;
+}
+
+.col-first .card li {
+  list-style: none;
+  font-size: 0.8em;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.col-first .card li img {
+  width: 14px;
+  height: 14px;
+}
+
+.col-second {
+  text-align: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+
+.col-second .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+
+.col-second .title img {
+  width: 60px;
+  height: 60px;
+}
+
+.col-second p {
+  font-size: 0.8em;
+}
+.col-second img {
+  width: 18px;
+  height: 18px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+form .alertNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  position: relative;
+  left: 33px;
+  margin-bottom: 8px;
+  font-size: 0.8em;
+  color: #dc143c;
+  display: flex;
+  align-items: center;
+}
+
+form .inp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  gap: 3px;
+}
+
+form .inp input {
+  padding: 5px;
+  width: 400px;
+  height: 30px;
+  border: 1px solid #87c7ff;
+  border-radius: 10px;
+}
+
+form .inpTextarea {
+  display: flex;
+  gap: 3px;
+}
+form .inpTextarea textarea {
+  padding: 5px;
+  width: 400px;
+  height: 100px;
+  border: 1px solid #87c7ff;
+  border-radius: 10px;
+}
+form button {
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: #cbe7ff;
+  width: 160px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #c6c6c6;
+}
+
+.successAlert {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid #008000;
+  border-radius: 10px;
+  background-color: #d2ffd2;
+  padding: 12px;
+  font-weight: bold;
+  color: #00a400;
+  position: relative;
+  bottom: 14px;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*----- Dashboard -----*/
